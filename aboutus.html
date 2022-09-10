@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css_responsive.css">
+	<title>About Us</title>
+</head>
+<body>
+<!-- 	<nav>
+		<ul><li>[RAW]</li></ul>
+		<ul>
+			<a href="#">HOME</a>
+			<a href="#">TEAM</a>
+			<a href="#">ABOUT</a>
+			<a href="#">CONTACT</a>
+			<a href="#">PROJECTS</a>
+		</ul>
+	</nav> -->
+
+	<!-- Navbar Starts Here -->
+	<div class="navbar">
+        <img src="public/images/logo.png" alt="" width="5%">
+    <ul id="menu_list">
+        <li>
+            <a href="home">Home</a>
+        </li>
+        <li>
+            <a href="team">Team</a>
+        </li>
+        <li>
+            <a href="">About</a>
+        </li>
+        <li>
+            <a href="contact">contact</a>
+        </li> 
+        <li>
+            <a href="">projects</a>
+        </li>
+    </ul>
+    <i class="far fa-bars" onclick="togglefunction()"></i>
+    </div>
+    <!-- Navbar Ends Here -->
+
+
+    <div class="contact">
+        <img src="public/images/contact_background.jpg" alt="" width="100%" class="contactbg1">
+        <img src="public/images/contact_background_2.jpg" alt="" width="100%" class="contactbg2">
+        <img src="public/images/contact_background_3.jpg" alt="" width="100%" class="contactbg3">
+        <img src="public/images/contact_background_4.jpg" alt="" width="100%" class="contactbg4">
+    </div>
+
+	<div id="hero_section">
+		<div id="black_hero_gradient">
+			<h1 id="heading">WE ARE <br><em>ENTHUSIASTS</em></h1>
+
+			<p>Lorem ipsum dolor sit amet. Eos enim voluptas aut nulla dolores vel aliquid debitis ut culpa dolor. Est cumque illo est nesciunt quas et velit harum est atque quis qui provident ducimus id minus eius vel voluptates quaerat.</p>
+		</div>
+	</div>
+
+	<div class="quote">
+	<p><em>"</em>We believe <em>success</em> comes not from thinking about goals, but <em>taking actions</em> to achieve them.<em>"</em></p>
+	</div>
+
+	<div id="details_container">
+		<div id="black_details_container_gradient">
+			<ul>
+				<li>LOREM IPSUM</li>
+				<li>Lorem ipsum dolor sit amet. Eos enim voluptas aut nulla dolores vel aliquid debitis ut culpa dolor. Est cumque illo est nesciunt quas et velit harum est atque quis qui provident ducimus id minus eius vel voluptates quaerat.</li>
+			</ul>
+			<ul>
+				<li>LOREM IPSUM</li>
+				<li>Lorem ipsum dolor sit amet. Eos enim voluptas aut nulla dolores vel aliquid debitis ut culpa dolor. Est cumque illo est nesciunt quas et velit harum est atque quis qui provident ducimus id minus eius vel voluptates quaerat.</li>
+			</ul>
+			<ul>
+				<li>LOREM IPSUM</li>
+				<li>Lorem ipsum dolor sit amet. Eos enim voluptas aut nulla dolores vel aliquid debitis ut culpa dolor. Est cumque illo est nesciunt quas et velit harum est atque quis qui provident ducimus id minus eius vel voluptates quaerat.</li>
+			</ul>
+			<ul>
+				<li>LOREM IPSUM</li>
+				<li>Lorem ipsum dolor sit amet. Eos enim voluptas aut nulla dolores vel aliquid debitis ut culpa dolor. Est cumque illo est nesciunt quas et velit harum est atque quis qui provident ducimus id minus eius vel voluptates quaerat.</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var v= document.querySelector("#menu_list");
+		function myFunction(x) {
+		    if (x.matches) { // If media query matches
+		        v.style.display='none';
+		    } else {
+		        v.style.display='block';
+		    }
+		  }
+		  
+		  var x = window.matchMedia("(max-width: 750px)")
+		  myFunction(x) // Call listener function at run time
+		  x.addListener(myFunction) // Attach listener function on state changes
+		function togglefunction(){
+		    if(v.style.display=='none'){
+		        v.style.display='block';
+		    }
+		    else{
+		        v.style.display='none';
+		    }
+		}
+	</script>
+</body>
+</html>
